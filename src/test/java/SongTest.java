@@ -2,6 +2,7 @@
  * NOTE: This Test class is already complete and should be used as reference for the other test cases
  */
 
+import models.Song;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

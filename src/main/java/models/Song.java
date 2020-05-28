@@ -1,3 +1,5 @@
+package models;
+
 public class Song implements Comparable<Song> {
     /**
      * The name of the song
@@ -10,7 +12,7 @@ public class Song implements Comparable<Song> {
     private String artist;
 
     /**
-     * Creates an instance of the Song class
+     * Creates an instance of the models.Song class
      * @param name The song name
      * @param artist The artist's name
      */
@@ -52,8 +54,8 @@ public class Song implements Comparable<Song> {
     }
 
     /**
-     * Converters a Song to a string description
-     * @return The string representation of a 'Song' object
+     * Converters a models.Song to a string description
+     * @return The string representation of a 'models.Song' object
      */
     @Override
     public String toString() {
@@ -61,18 +63,18 @@ public class Song implements Comparable<Song> {
     }
 
     /**
-     * Determines if this Song obj is equal to the provided object
+     * Determines if this models.Song obj is equal to the provided object
      * @param obj The compared object
      * @return True if the Songs are the same, and false otherwise
      */
     @Override
     public boolean equals(Object obj) {
-        // Checks if 'obj' is null or can't be assigned to a 'Song' class
+        // Checks if 'obj' is null or can't be assigned to a 'models.Song' class
         if (obj == null || !Song.class.isAssignableFrom(obj.getClass())) {
             return false;
         }
 
-        // Casts the 'obj' to a 'Song' object
+        // Casts the 'obj' to a 'models.Song' object
         final Song otherSong = (Song)obj;
 
         // Checks if the name and artist are the same
@@ -92,13 +94,13 @@ public class Song implements Comparable<Song> {
      */
     @Override
     public int compareTo(Song otherSong) {
-        // Compares the Song Name by sending the compareTo call to the string level to find if they are different
+        // Compares the models.Song Name by sending the compareTo call to the string level to find if they are different
         if (this.getName().compareTo(otherSong.getName()) > 0) { return 1; }
         else if (this.getName().compareTo(otherSong.getName()) < 0) { return -1; }
         else {
             // Compares the Artist by sending the compareTo call to the string level to find if they are different
-            if (this.getName().compareTo(otherSong.getArtist()) > 0) { return 1; }
-            else if (this.getName().compareTo(otherSong.getArtist()) < 0) { return 1; }
+            if (this.getArtist().compareTo(otherSong.getArtist()) > 0) { return 1; }
+            else if (this.getArtist().compareTo(otherSong.getArtist()) < 0) { return 1; }
 
             // If we reach here both the name and artist were 0 meaning they were equal
             else { return 0; }
@@ -112,6 +114,10 @@ public class Song implements Comparable<Song> {
     public static void main(String[] args) {
         Song songOne = new Song("NameOne", "ArtOne");
         Song songTwo = new Song("NameTwo", "ArtTwo");
+        Song dupe = new Song("NameOne", "ArtOne");
+
+        songOne.compareTo(songTwo);
+        songOne.compareTo(dupe);
 
         // Using the 'toString' method
         System.out.println(songOne);
