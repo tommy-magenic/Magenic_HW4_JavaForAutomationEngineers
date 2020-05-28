@@ -238,34 +238,18 @@ public class MP3Player {
 
     public static void main(String[] args) {
         MP3Player mp3 = new MP3Player();
-        // Songs
+
         mp3.songDatabase.addSong(new Song("test", "art1"));
         mp3.songDatabase.addSong(new Song("test", "art2"));
-        mp3.songDatabase.addSong(new Song("test", "art3"));
-        mp3.songDatabase.addSong(new Song("test", "art4"));
-        mp3.songDatabase.addSong(new Song("test", "art5"));
-        mp3.songDatabase.addSong(new Song("test", "art6"));
-        mp3.songDatabase.addSong(new Song("test", "art7"));
-        mp3.songDatabase.addSong(new Song("test", "art8"));
-        mp3.songDatabase.addSong(new Song("test", "art9"));
-        mp3.songDatabase.addSong(new Song("test", "art10"));
-        mp3.songDatabase.addSong(new Song("test", "art11"));
-        mp3.songDatabase.addSong(new Song("test", "art12"));
 
-        System.out.println("NUMBER OF SONGS: " + mp3.songDatabase.getSongArchive().size());
+        mp3.songDatabase.createPlaylist("PLAY");
 
-        // Does the set archive contain them NOTE THEY SHOULD BE ALL TRUE BUT THEY AREN'T
-        System.out.println(mp3.songDatabase.getSongArchive().contains(new Song("test", "art1")));
-        System.out.println(mp3.songDatabase.getSongArchive().contains(new Song("test", "art2")));
-        System.out.println(mp3.songDatabase.getSongArchive().contains(new Song("test", "art3")));
-        System.out.println(mp3.songDatabase.getSongArchive().contains(new Song("test", "art4")));
-        System.out.println(mp3.songDatabase.getSongArchive().contains(new Song("test", "art5")));
-        System.out.println(mp3.songDatabase.getSongArchive().contains(new Song("test", "art6")));
-        System.out.println(mp3.songDatabase.getSongArchive().contains(new Song("test", "art7")));
-        System.out.println(mp3.songDatabase.getSongArchive().contains(new Song("test", "art8")));
-        System.out.println(mp3.songDatabase.getSongArchive().contains(new Song("test", "art9")));
-        System.out.println(mp3.songDatabase.getSongArchive().contains(new Song("test", "art10")));
-        System.out.println(mp3.songDatabase.getSongArchive().contains(new Song("test", "art11")));
-        System.out.println(mp3.songDatabase.getSongArchive().contains(new Song("test", "art12")));
+        mp3.songDatabase.addSongToPlaylist(new Song("test", "art1"), "PLAY");
+        mp3.songDatabase.addSongToPlaylist(new Song("test", "art2"), "PLAY");
+        mp3.songDatabase.addSongToPlaylist(new Song("test", "art3"), "PLAY");
+        mp3.songDatabase.addSongToPlaylist(new Song("test", "art4"), "PLAY");
+        mp3.songDatabase.addSongToPlaylist(new Song("test", "art5"), "PLAY");
+
+        mp3.mainMenu();
     }
 }

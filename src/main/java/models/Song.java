@@ -100,7 +100,7 @@ public class Song implements Comparable<Song> {
         else {
             // Compares the Artist by sending the compareTo call to the string level to find if they are different
             if (this.getArtist().compareTo(otherSong.getArtist()) > 0) { return 1; }
-            else if (this.getArtist().compareTo(otherSong.getArtist()) < 0) { return 1; }
+            else if (this.getArtist().compareTo(otherSong.getArtist()) < 0) { return -1; }
 
             // If we reach here both the name and artist were 0 meaning they were equal
             else { return 0; }
