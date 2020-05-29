@@ -1,0 +1,41 @@
+TODO HOMEWORK CHECKLIST:
+PROGRAMMING TASKS:
+    SongDatabase.java
+        [ ] Complete the 'addSong' method
+        [ ] Throw an IllegalArgumentException when a playlist of the given name already exists in the 'createPlaylist' method
+        [ ] Complete the 'getPlaylist' method
+        [ ] Complete the 'addSongToPlaylist' method
+        [ ] Complete the 'findSongByName' method
+        [ ] Complete the 'findSongByArtist' method
+    MP3Player.java
+        [ ] Run the 'main' method and try multiple work flows
+
+TEST TASKS:
+    SongDatabaseTest.java
+        [ ] Write the 'testAddDeleteSong' test method
+        [ ] Write the 'testAddGetDeletePlaylist' test method
+        [ ] Run every other test
+
+SHORT ANSWERS:
+    // TODO FOR HOMEWORK: Answer each question, and note many don't have a 'right answer' so just answer honestly
+    [ ] The MP3Player is a console application, what features do you wish were added?
+        // ANSWER HERE:
+
+    [ ] Pick any feature you mentioned in the last question. Do you think you could implement that feature with your current knowledge? If yes explain the basic thought processing of adding that feature, if not explain why.
+        // ANSWER HERE:
+
+    [ ] What is a loop?
+        // ANSWER HERE:
+
+    [ ] Write what each of these loops does in your own words:
+        // FOR LOOP:
+        // WHILE LOOP:
+        // DO WHILE:
+
+    [ ] Why were 'infinite loops' used in this project? (See UserHelperMethods.displayOptionsAndWaitForValidOption(String[] options) for a reference)
+        // ANSWER HERE:
+
+    [ ] This project has 3 packages (models, resources, and utils). Describe each one.
+        // MODELS:
+        // RESOURCES:
+        // UTILS:

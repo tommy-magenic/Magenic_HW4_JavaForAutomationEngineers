@@ -1,5 +1,8 @@
 package models;
 
+/**
+ * NOTE: This Song class is already complete and is the main model for this project
+ */
 public class Song implements Comparable<Song> {
     /**
      * The name of the song
@@ -12,7 +15,7 @@ public class Song implements Comparable<Song> {
     private String artist;
 
     /**
-     * Creates an instance of the models.Song class
+     * Creates an instance of the Song class
      * @param name The song name
      * @param artist The artist's name
      */
@@ -88,7 +91,7 @@ public class Song implements Comparable<Song> {
 
     /**
      * IMPORTANT NOTE: THIS METHOD IS NEEDED FOR SIMPLICITY IN THE HOMEWORK, BUT IT IS NOT BEGINNER FRIENDLY YOU DO NOT NEED TO TOUCH THIS METHOD
-     *                 For anyone how wants to learn more about compareTo read this link, but you have been warned: https://medium.com/omarelgabrys-blog/comparing-objects-307400115f88
+     *                 For anyone who wants to learn more about compareTo read this link, but you have been warned: https://medium.com/omarelgabrys-blog/comparing-objects-307400115f88
      * @param otherSong The other song object
      * @return 0 if the songs are equal and other numbers if not
      */
