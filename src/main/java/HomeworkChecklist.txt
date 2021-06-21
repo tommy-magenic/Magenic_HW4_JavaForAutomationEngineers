@@ -1,41 +1,58 @@
 TODO HOMEWORK CHECKLIST:
 PROGRAMMING TASKS:
     SongDatabase.java
-        [ ] Complete the 'addSong' method
-        [ ] Throw an IllegalArgumentException when a playlist of the given name already exists in the 'createPlaylist' method
-        [ ] Complete the 'getPlaylist' method
-        [ ] Complete the 'addSongToPlaylist' method
-        [ ] Complete the 'findSongByName' method
-        [ ] Complete the 'findSongByArtist' method
+        [X] Complete the 'addSong' method
+        [x] Throw an IllegalArgumentException when a playlist of the given name already exists in the 'createPlaylist' method
+        [x] Complete the 'getPlaylist' method
+        [x] Complete the 'addSongToPlaylist' method
+        [x] Complete the 'findSongByName' method
+        [x] Complete the 'findSongByArtist' method
     MP3Player.java
-        [ ] Run the 'main' method and try multiple work flows
+        [x] Run the 'main' method and try multiple work flows
 
 TEST TASKS:
     SongDatabaseTest.java
-        [ ] Write the 'testAddDeleteSong' test method
-        [ ] Write the 'testAddGetDeletePlaylist' test method
-        [ ] Run every other test
+        [X] Write the 'testAddDeleteSong' test method
+        [X] Write the 'testAddGetDeletePlaylist' test method
+        [X] Run every other test
 
 SHORT ANSWERS:
     // TODO FOR HOMEWORK: Answer each question, and note many don't have a 'right answer' so just answer honestly
-    [ ] The MP3Player is a console application, what features do you wish were added?
+    [X] The MP3Player is a console application, what features do you wish were added?
         // ANSWER HERE:
+            for the play song i would like it to present a list of songs in the database instead of prompting to enter
+            the name of the song you wish to play.
+            Another cool feature to be added would be to allow entire albums to be imported at a time, instead of having
+            to add each song one by one.
+
 
     [ ] Pick any feature you mentioned in the last question. Do you think you could implement that feature with your current knowledge? If yes explain the basic thought processing of adding that feature, if not explain why.
         // ANSWER HERE:
-
+        Yeah i think a list of songs in the songArchive could be printed to the screen when electing to play a song, which
+        would allow the user to select a song to play.
     [ ] What is a loop?
         // ANSWER HERE:
+        A loop is a a way to iterate over a range of values or a set of objects, or untill some condition is met.
+        or repeat the same block of code based on a condition.
 
     [ ] Write what each of these loops does in your own words:
         // FOR LOOP:
+        repeat the same block of code based on a condition puts the incrementation step and the conditon in
+        the same line.
         // WHILE LOOP:
+        continues to loop until some condition is met the incrementation must be done within the while loop
         // DO WHILE:
+        Similar to a while loop, however the condition is checked after finishing the block of code instead of before
+        like in the while loop.
 
     [ ] Why were 'infinite loops' used in this project? (See UserHelperMethods.displayOptionsAndWaitForValidOption(String[] options) for a reference)
         // ANSWER HERE:
+        The application always continues to run. after you finish selecting a song, the application should prompt the
+        user to enter the next commands for the mp3 player. so the application runs only until the user tells it to
+        terminate.
 
     [ ] This project has 3 packages (models, resources, and utils). Describe each one.
-        // MODELS:
-        // RESOURCES:
-        // UTILS:
+        // MODELS: Models is how the MP3 player and song classes interact.
+        // RESOURCES: Are static classes which can be used thought the application to keep things simple and concise.
+        // UTILS: Utils is the section of the application which is responsible for the user interaction with the MP3 player
+        code.
